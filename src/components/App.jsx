@@ -1,10 +1,23 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
+import {Route, Switch } from 'react-router-dom';
+import BulletinBoard from './BulletinBoard';
+import Error404 from './Error404';
+import Header from './Header';
+import Home from './Home';
 
 function App() {
   return (
     <div>
-      Welcome, Adventurer!
+      <style jsx>{`
+        background: burlywood;
+      `}</style>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/BulletinBoard' component={BulletinBoard} />
+        <Route component={Error404} />
+      </Switch>
     </div>
   );
 }
