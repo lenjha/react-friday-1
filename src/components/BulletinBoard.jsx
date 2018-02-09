@@ -6,10 +6,13 @@ function BulletinBoard() {
     <div>
       <style jsx>{`
         background: darkolivegreen;
-        padding: 60px;
+
       `}</style>
       <h3>BULLETIN BOARD</h3>
-      <QuestList />
+      <p>This is the quest bulletin!  You get things for completing the things.  Complete all the things!</p>
+      <div className='quests'>
+        <QuestList />
+      </div>
     </div>
   );
 }
