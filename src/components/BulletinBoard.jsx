@@ -5,14 +5,28 @@ function BulletinBoard() {
   return (
     <div>
       <style jsx>{`
-        background: darkolivegreen;
+        display: flex;
+        flex-direction: column;
 
+        .quests{
+          flex-wrap: wrap;
+          flex-direction: row;
+        }
+        p {
+          margin: 1px;
+          text-align: center;
+        }
       `}</style>
       <h3>BULLETIN BOARD</h3>
-      <p>This is the quest bulletin!  You get things for completing the things.  Complete all the things!</p>
       <div className='quests'>
         <QuestList />
       </div>
+      <em><p>In the house of upside-down,</p>
+        <p>Cellar's top-floor, attic's ground</p>
+        <p>In the house of upside-down,</p>
+        <p>Laughing cries and smiles frown,</p>
+        <p>In the house of upside-down,</p>
+        <p>Found is lost, and lost is found</p></em>
     </div>
   );
 }

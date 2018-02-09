@@ -1,21 +1,33 @@
 import React from 'react';
+import NavBar from './NavBar';
+import { Link } from 'react-router-dom';
 
 function Header() {
+  const link={
+    textDecoration:'none',
+    color: 'white'
+  };
   return (
     <div>
       <style jsx>{`
-        background: cadetblue;
+        background: #563f37;
         color: lightyellow;
         width: 100%;
-        padding: 30px;
+        margin: 0;
+        padding: 10px 0;
 
         h1{
           text-align: center;
         }
+        a:hover{
+          color: tan;
+        }
+
       `}</style>
       <h1>
-        COME ONE, COME ALL
+        <Link style={link} to='/'><a>Once upon a time...</a></Link>
       </h1>
+      <NavBar />
     </div>
   );
 }

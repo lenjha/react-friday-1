@@ -5,17 +5,27 @@ function Quest(props) {
   return (
     <div>
       <style jsx>{`
+        display: flex;
+        flex-direction: column;
+
         background: lightsteelblue;
         margin: 30px;
+        max-width: 400px;
 
-        h3{
+        h2, h3{
+          margin: 0 auto 15px;
+          text-align: center;
+        }
+        p {
           margin: 0;
+          text-align: center;
         }
       `}</style>
-      <div style={{margin:'10px'}}>
-        <h3>{props.title} - {props.giver}</h3>
-        <p>{props.description}</p>
-        <p>{props.reward}</p>
+      <div>
+        <h2>{props.title}</h2>
+        <h3>- {props.giver}</h3>
+        <p><em>{props.description}</em></p>
+        <p>Reward: {props.reward}</p>
 
       </div>
     </div>

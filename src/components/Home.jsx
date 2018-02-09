@@ -4,10 +4,15 @@ function Home() {
   return (
     <div>
       <style jsx>{`
-        background: honeydew;
-        padding: 60px;
+        background: #b2a6a2;
+        width: 100%;
+        span{
+          height: 100%;
+        }
       `}</style>
-      Home works!
+      <span>
+        Once upon a time, there was a little girl...
+      </span>
     </div>
   );
 }

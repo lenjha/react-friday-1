@@ -10,8 +10,9 @@ function App() {
   return (
     <div>
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-        font-family: 'Press Start 2P', monospace;
+          @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+        font-family: 'Annie Use Your Telescope', cursive;
+
       `}</style>
       <Header />
       <Switch>
