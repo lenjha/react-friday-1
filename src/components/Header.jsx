@@ -4,9 +4,18 @@ function Header() {
   return (
     <div>
       <style jsx>{`
-        background: pink;
+        background: cadetblue;
+        color: lightyellow;
+        width: 100%;
+        padding: 30px;
+
+        h1{
+          text-align: center;
+        }
       `}</style>
-      Header works!
+      <h1>
+        COME ONE, COME ALL
+      </h1>
     </div>
   );
 }

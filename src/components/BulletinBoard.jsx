@@ -1,12 +1,15 @@
 import React from 'react';
+import QuestList from './QuestList';
 
 function BulletinBoard() {
   return (
     <div>
       <style jsx>{`
-        background: brown;
+        background: darkolivegreen;
+        padding: 60px;
       `}</style>
-      Bulletin Board Works!
+      <h3>BULLETIN BOARD</h3>
+      <QuestList />
     </div>
   );
 }

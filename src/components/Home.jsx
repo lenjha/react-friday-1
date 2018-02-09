@@ -5,6 +5,7 @@ function Home() {
     <div>
       <style jsx>{`
         background: honeydew;
+        padding: 60px;
       `}</style>
       Home works!
     </div>
