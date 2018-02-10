@@ -1,15 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Quest(props) {
+  const link={
+    textDecoration:'none',
+    color: 'black'
+  };
   return (
     <div>
       <style jsx>{`
         display: flex;
         flex-direction: column;
 
-        background: lightsteelblue;
-        margin: 30px;
+        .box {
+          background: #eeeeee;
+          border: 5px solid #ddd;
+          padding: 25px;
+        }
+
+        margin: 10px;
         max-width: 400px;
 
         h2, h3{
@@ -20,13 +30,20 @@ function Quest(props) {
           margin: 0;
           text-align: center;
         }
+
+        button {
+          width: 45px;
+        }
       `}</style>
-      <div>
+      <div className='box'>
         <h2>{props.title}</h2>
         <h3>- {props.giver}</h3>
         <p><em>{props.description}</em></p>
         <p>Reward: {props.reward}</p>
 
+        <Link style={link} to='/QuestForm'>
+          <button>Edit</button>
+        </Link>
       </div>
     </div>
   );

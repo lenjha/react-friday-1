@@ -5,19 +5,26 @@ import BulletinBoard from './BulletinBoard';
 import Error404 from './Error404';
 import Header from './Header';
 import Home from './Home';
+import Inventory from './Inventory';
+import Hello from './Hello';
+import QuestForm from './QuestForm';
 
 function App() {
   return (
     <div>
       <style jsx>{`
-          @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
-        font-family: 'Annie Use Your Telescope', cursive;
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker');
+        font-family: monospace;
+
 
       `}</style>
       <Header />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/BulletinBoard' component={BulletinBoard} />
+        <Route path='/Inventory' component={Inventory} />
+        <Route path='/Hello' component={Hello} />
+        <Route path='/QuestForm' component={QuestForm} />
         <Route component={Error404} />
       </Switch>
     </div>

@@ -5,29 +5,32 @@ import { Link } from 'react-router-dom';
 function Header() {
   const link={
     textDecoration:'none',
-    color: 'white'
+    color: 'black'
   };
   return (
     <div>
       <style jsx>{`
-        background: #563f37;
-        color: lightyellow;
+          .header-bg{
+            background: #dddddd;
+            marginL 0;
+          }
         width: 100%;
-        margin: 0;
-        padding: 10px 0;
 
         h1{
+          padding: 20px;
           text-align: center;
         }
         a:hover{
-          color: tan;
+          color: darkred;
         }
 
       `}</style>
-      <h1>
-        <Link style={link} to='/'><a>Once upon a time...</a></Link>
-      </h1>
-      <NavBar />
+      <div className='header-bg'>
+        <h1>
+          <Link style={link} to='/'><a>Once upon a time...</a></Link>
+        </h1>
+        <NavBar />
+      </div>
     </div>
   );
 }
