@@ -2,6 +2,8 @@
 #### Project by Lena Ha
 
 ### Description
+My thoughts on the differences in development process in Angular vs. React:
+The flow of data in React is much more streamlined and intuitive when compared to Angular thus far.  Of course, this could be simply be due to the progression from Angular to React and having some of the points in Angular regarding parent-child relationships hammered in with the passing of time.
 
 ### Project Requirements
 * Component tree/map is planned and drawn out
@@ -9,6 +11,10 @@
 * Commit history depicts a full day's work
 
 ### Setup
+Clone the project
+Install the Node Package Manager
+"npm run start"
+Type http://localhost:8080/#/ into the URL
 
 ### Technologies
 _This application uses HTML/CSS, JS, and React_
