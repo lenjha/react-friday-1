@@ -41,7 +41,7 @@ function Quest(props) {
         <p><em>{props.description}</em></p>
         <p>Reward: {props.reward}</p>
 
-        <Link style={link} to='/QuestForm'>
+        <Link style={link} to='/EditQuest'>
           <button>Edit</button>
         </Link>
       </div>

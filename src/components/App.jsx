@@ -7,7 +7,7 @@ import Header from './Header';
 import Home from './Home';
 import Inventory from './Inventory';
 import Hello from './Hello';
-import QuestForm from './QuestForm';
+import EditQuest from './EditQuest';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path='/BulletinBoard' component={BulletinBoard} />
         <Route path='/Inventory' component={Inventory} />
         <Route path='/Hello' component={Hello} />
-        <Route path='/QuestForm' component={QuestForm} />
+        <Route path='/EditQuest' component={EditQuest} />
         <Route component={Error404} />
       </Switch>
     </div>
