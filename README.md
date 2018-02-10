@@ -13,7 +13,13 @@
 ### Technologies
 _This application uses HTML/CSS, JS, and React_
 
-### Adjustments to be Made
+### Notes/Questions
+Were we essentially supposed to create two versions of the same application?
+
+Figure out how to use custom/downloaded fonts instead of simply Google CSS links (so that DaFont fonts can be used!)
+
+* Route without writing all routes in app.jsx?
+* Fill in quest to add to list
 
 ### License
 Copyright(c) 2018, {Lena Ha}
