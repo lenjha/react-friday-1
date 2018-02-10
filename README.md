@@ -19,7 +19,7 @@ Type http://localhost:8080/#/ into the URL
 ### Technologies
 _This application uses HTML/CSS, JS, and React_
 
-### Notes/Questions
+### Notes/Quessies
 Were we essentially supposed to create two versions of the same application?
 
 Figure out how to use custom/downloaded fonts instead of simply Google CSS links (so that DaFont fonts can be used!)
