@@ -8,9 +8,8 @@ function Error404(props) {
       <style jsx>{`
         background: crimson;
       `}</style>
-      ERROR 404
       <h4>The page {props.location.pathname} does not exist.</h4>
-      Click <Link to="/">here</Link> to return.
+      <p>Click <Link to="/">here</Link> to return.</p>
     </div>
   );
 }
