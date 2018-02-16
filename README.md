@@ -5,6 +5,8 @@
 My thoughts on the differences in development process in Angular vs. React:
 The flow of data in React is much more streamlined and intuitive when compared to Angular thus far.  Of course, this could be simply be due to the progression from Angular to React and having some of the points in Angular regarding parent-child relationships hammered in with the passing of time.
 
+This is essentially a reworking of the Angular Quest Board project, located here: https://github.com/lenjha/quest-board.
+
 ### Project Requirements
 * Component tree/map is planned and drawn out
 * Application uses hard-coded data (for now)

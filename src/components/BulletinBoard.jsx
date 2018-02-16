@@ -26,6 +26,7 @@ function BulletinBoard() {
       `}</style>
       <div className='background'>
         <h3>entreaties & solicitations</h3>
+        <p>to add...</p>
         <div className='quests'>
           <QuestList />
         </div>

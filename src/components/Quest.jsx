@@ -1,12 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 function Quest(props) {
-  const link={
-    textDecoration:'none',
-    color: 'black'
-  };
   return (
     <div>
       <style jsx>{`
@@ -41,9 +36,7 @@ function Quest(props) {
         <p><em>{props.description}</em></p>
         <p>Reward: {props.reward}</p>
 
-        <Link style={link} to='/EditQuest'>
-          <button>Edit</button>
-        </Link>
+        <button>Edit!</button>
       </div>
     </div>
   );

@@ -1,0 +1,8 @@
+[ ] - Component tree as a link or image in README.md!
+[ ] - Update README.md
+[ ] - Lifting state
+            Which components hold static values that need to become state data?
+            Which closest common parents should each piece of state be lifted to?
+[ ] - Draw updated tree diagram
+            Indicate where state will reside and the components that will flow into it
+[ ] - Commit updated diagram to README.md before doing any refactoring
