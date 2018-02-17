@@ -7,6 +7,13 @@ The flow of data in React is much more streamlined and intuitive when compared t
 
 This is essentially a reworking of the Angular Quest Board project, located here: https://github.com/lenjha/quest-board.
 
+![Component Tree](components-tree.jpg?raw=true)
+
+I callously did some refactoring to replace BulletinBoard with Home.  It did not go well.  I will spend some time working this out.
+
+![Component Tree 2](components-tree2.jpg?raw=true)
+
+
 ### Project Requirements
 * Component tree/map is planned and drawn out
 * Application uses hard-coded data (for now)
