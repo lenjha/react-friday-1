@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function AddButton(){
+function AddButton(props){
   return (
     <div>
-      <button>ADD</button>
+      <button onClick={props.onAddQuestConfirmation}>ADD</button>
     </div>
   );
 }

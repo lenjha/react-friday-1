@@ -1,6 +1,7 @@
 import React from 'react';
 import NewQuestForm from './NewQuestForm';
 import AddButton from './AddButton';
+import PropTypes from 'prop-types';
 
 class NewQuestControl extends React.Component{
 
@@ -14,31 +15,26 @@ class NewQuestControl extends React.Component{
 
   handleAddQuestConfirmation(){
     this.setState({visibleOnPage: true});
-    alert('visibleOnPage is now: ' + this.state.visibleOnPage);
   }
 
   render(){
     let currentlyVisible = null;
     if (this.state.visibleOnPage){
-      currentlyVisible = <NewQuestForm />;
+      currentlyVisible = <NewQuestForm onNewQuestCreation={this.props.onNewQuestCreation}/>;
     } else {
       currentlyVisible = <AddButton onAddQuestConfirmation={this.handleAddQuestConfirmation} />;
     }
     return(
       <div>
+        <p>New Quest Control!</p>
         {currentlyVisible}
       </div>
     );
   }
-
-  // render(){
-  //   return(
-  //     <div>
-  //       <p>NEW QUEST CONTROL!</p>
-  //       <p onClick={this.handleClick}>Click!</p>
-  //     </div>
-  //   );
-  // }
 }
+
+NewQuestControl.propTypes = {
+  onNewQuestCreation: PropTypes.func
+};
 
 export default NewQuestControl;

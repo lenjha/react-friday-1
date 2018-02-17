@@ -32,9 +32,9 @@ function Quest(props) {
       `}</style>
       <div className='box'>
         <h2>{props.title}</h2>
-        <h3>- {props.giver}</h3>
+        <h3>- {props.givers}</h3>
         <p><em>{props.description}</em></p>
-        <p>Reward: {props.reward}</p>
+        <p>{props.location}</p>
 
         <button>Edit!</button>
       </div>
@@ -44,9 +44,9 @@ function Quest(props) {
 
 Quest.propTypes = {
   title: PropTypes.string.isRequired,
-  giver: PropTypes.string.isRequired,
+  givers: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  reward: PropTypes.string.isRequired
+  location: PropTypes.string.isRequired
 };
 
 export default Quest;
