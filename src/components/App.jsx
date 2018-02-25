@@ -16,7 +16,6 @@ function App() {
         @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker');
         font-family: monospace;
 
-
       `}</style>
       <Header />
       <Switch>

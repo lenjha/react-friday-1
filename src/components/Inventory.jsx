@@ -16,7 +16,7 @@ function NavBar() {
           color: darkred;
         }
       `}</style>
-      <Link style={link} to='/BulletinBoard'><a>Quests</a></Link>
+    <h1>Inventory Works!</h1>
     </div>
   );
 }
