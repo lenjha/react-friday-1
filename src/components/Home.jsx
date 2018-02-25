@@ -1,12 +1,11 @@
 import React from 'react';
-// import BulletinBoard from './BulletinBoard';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Home() {
-  // const link={
-  //   textDecoration: 'none',
-  //   color: 'black'
-  // };
+  const link={
+    textDecoration: 'none',
+    color: 'black'
+  };
 
   return (
     <div>
@@ -22,8 +21,7 @@ function Home() {
         }
       `}</style>
       <div className='home'>
-        This is the Home Component
-        
+        Once upon a time, there was a <Link style={link} to='/Hello'><a>little girl...</a></Link>
       </div>
     </div>
   );

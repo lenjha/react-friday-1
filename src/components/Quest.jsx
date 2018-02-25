@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Quest(props) {
+  const link={
+    textDecoration:'none',
+    color: 'black'
+  };
   return (
     <div>
       <style jsx>{`
@@ -32,11 +37,13 @@ function Quest(props) {
       `}</style>
       <div className='box'>
         <h2>{props.title}</h2>
-        <h3>- {props.givers}</h3>
+        <h3>- {props.giver}</h3>
         <p><em>{props.description}</em></p>
-        <p>{props.location}</p>
+        <p>Reward: {props.reward}</p>
 
-        <button>Edit!</button>
+        <Link style={link} to='/EditQuest'>
+          <button>Edit</button>
+        </Link>
       </div>
     </div>
   );
@@ -44,9 +51,9 @@ function Quest(props) {
 
 Quest.propTypes = {
   title: PropTypes.string.isRequired,
-  givers: PropTypes.string.isRequired,
+  giver: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired
+  reward: PropTypes.string.isRequired
 };
 
 export default Quest;
