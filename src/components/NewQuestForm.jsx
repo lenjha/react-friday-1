@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewQuestForm(){
+function NewQuestForm(props){
   let _title = null;
   let _giver = null;
   let _description = null;
@@ -46,5 +47,9 @@ function NewQuestForm(){
     </div>
   );
 }
+
+NewQuestForm.propTypes = {
+  onNewQuestCreation: PropTypes.func
+};
 
 export default NewQuestForm;
