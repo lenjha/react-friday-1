@@ -1,4 +1,5 @@
 import React from 'react';
+import Confirmation from './Confirmation';
 import NewQuestForm from './NewQuestForm';
 
 class NewQuestControl extends React.Component {
@@ -8,22 +9,19 @@ class NewQuestControl extends React.Component {
 		this.state = {
 			formVisibleOnPage: false
 		};
-		//this.handleClick = this.handleClick.bind(this);
-		// bind the method handler to instance of the component
+		this.handleConfirmation = this.handleConfirmation.bind(this);
 	}
 
-	//method handler
-	// handleClick(){
-	// 	this.setState({formVisibleOnPage: true});
-	// 	console.log("formVisibleOnPage has been set to: " + this.state.formVisibleOnPage);
-	// }
+	handleConfirmation(){
+		this.setState({formVisibleOnPage: true});
+	}
 
 	render(){
 	    let currentContent = null;
 	    if (this.state.formVisibleOnPage){
 	      currentContent = <NewQuestForm />;
 	    } else {
-				currentContent = <Confirmation />;
+				currentContent = <Confirmation onConfirmation={this.handleConfirmation} />;
 			}
 	    return (
 	      <div>
