@@ -1,11 +1,11 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import {Route, Switch } from 'react-router-dom';
-import BulletinBoard from './BulletinBoard';
+// import BulletinBoard from './BulletinBoard';
 import Error404 from './Error404';
 import Header from './Header';
 import Home from './Home';
-import Inventory from './Inventory';
+// import Inventory from './Inventory';
 import Hello from './Hello';
 import EditQuest from './EditQuest';
 import QuestList from './QuestList';
@@ -82,8 +82,7 @@ class App extends React.Component() {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/BulletinBoard' component={BulletinBoard} />
-          <Route path='/Inventory' component={Inventory} />
+          <Route path='/BulletinBoard' render={()=><QuestList questList={this.state.masterQuestList} />}/>
           <Route path='/Hello' component={Hello} />
           <Route path='/NewQuest' render={()=><NewQuestControl onNewQuestCreation={this.handleAddingNewQuest} />} />
           <Route path='/EditQuest' component={EditQuest} />

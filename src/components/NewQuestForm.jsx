@@ -9,10 +9,7 @@ function NewQuestForm(props){
 
   function handleNewQuestSubmission(event){
     event.preventDefault();
-    console.log(_title);
-    console.log(_giver);
-    console.log(_description);
-    console.log(_reward);
+    props.onNewQuestCreation({title: _title.value, giver: _giver.value, description: _description.value, reward: _reward.value});
     _title = '';
     _giver = '';
     _description = '';
