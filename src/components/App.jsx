@@ -8,6 +8,7 @@ import Home from './Home';
 import Inventory from './Inventory';
 import Hello from './Hello';
 import EditQuest from './EditQuest';
+import NewQuestControl from './NewQuestControl';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/BulletinBoard' component={BulletinBoard} />
         <Route path='/Inventory' component={Inventory} />
         <Route path='/Hello' component={Hello} />
+        <Route path='/NewQuest' component={NewQuestControl} />
         <Route path='/EditQuest' component={EditQuest} />
         <Route component={Error404} />
       </Switch>

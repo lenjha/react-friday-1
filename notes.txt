@@ -1,8 +1,30 @@
-[ ] - Component tree as a link or image in README.md!
-[ ] - Update README.md
-[ ] - Lifting state
-            Which components hold static values that need to become state data?
-            Which closest common parents should each piece of state be lifted to?
-[ ] - Draw updated tree diagram
-            Indicate where state will reside and the components that will flow into it
-[ ] - Commit updated diagram to README.md before doing any refactoring
+Step by step refactor
+
+Click Edit - EditQuest appears
+
+Add state
+Lift state
+
+Which components will hold static values that need to become state data?
+Which closest common parent should each piece of state be lifted to?
+
+
+
+
+
+initialize state in constructor
+  call setState when you want to change it
+
+
+
+
+create stateful class-based components that will record whether the app is in the state of displaying questions or state of displaying the form
+  IT IS STATE BECAUSE IT MUST BE ABLE TO CHANGE
+
+construct an event to toggle state value when completed
+
+make new component to contain things we want to appear before the form
+
+conditional rendering to change what's displayed depending on the current state - app can go from the state of displaying questions to the state of displaying form
+
+unidirectional data flow - allow components to communicate and work in sync

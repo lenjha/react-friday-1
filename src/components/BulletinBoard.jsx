@@ -24,6 +24,7 @@ function BulletinBoard() {
           text-align: center;
         }
       `}</style>
+    
       <div className='background'>
         <h3>entreaties & solicitations</h3>
         <div className='quests'>

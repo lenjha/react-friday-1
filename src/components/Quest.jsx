@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function Quest(props) {
+
   const link={
     textDecoration:'none',
     color: 'black'
@@ -44,6 +45,7 @@ function Quest(props) {
         <Link style={link} to='/EditQuest'>
           <button>Edit</button>
         </Link>
+
       </div>
     </div>
   );
