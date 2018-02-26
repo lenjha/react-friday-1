@@ -17,7 +17,7 @@ function NavBar() {
           color: darkred;
         }
       `}</style>
-      <Link style={link} to='/BulletinBoard'><a>Quests</a></Link>
+    <Link style={link} to='/QuestList'><a>Quests</a></Link>
       <Link style={link} to='/NewQuest'><a>Add a Quest</a></Link>
     </div>
   );
