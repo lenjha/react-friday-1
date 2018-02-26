@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 function NavBar() {
   const link={
     textDecoration: 'none',
-    color: 'black'
+    color: 'black',
+    margin: '20px'
   };
 
   return (
@@ -17,6 +18,7 @@ function NavBar() {
         }
       `}</style>
       <Link style={link} to='/BulletinBoard'><a>Quests</a></Link>
+      <Link style={link} to='/NewQuest'><a>Add a Quest</a></Link>
     </div>
   );
 }

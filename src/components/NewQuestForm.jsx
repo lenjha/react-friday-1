@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewQuestForm(props){
   let _title = null;
@@ -9,7 +10,7 @@ function NewQuestForm(props){
 
   function handleNewQuestSubmission(event){
     event.preventDefault();
-    props.onNewQuestCreation({title: _title.value, giver: _giver.value, description: _description.value, reward: _reward.value});
+    props.onNewQuestCreation({title: _title.value, giver: _giver.value, description: _description.value, reward: _reward.value, id: v4() });
     _title = '';
     _giver = '';
     _description = '';

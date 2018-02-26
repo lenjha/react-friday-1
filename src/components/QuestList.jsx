@@ -44,12 +44,12 @@ import PropTypes from 'prop-types';
 function QuestList(props) {
   return (
     <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', justifyContent:'center', maxWidth:'1800px', margin:'auto'}}>
-      {props.questList.map((quest, index) =>
+      {props.questList.map((quest) =>
         <Quest title={quest.title}
           giver={quest.giver}
           description={quest.description}
           reward={quest.reward}
-          key={index}/>
+          key={quest.id}/>
       )}
     </div>
   );
