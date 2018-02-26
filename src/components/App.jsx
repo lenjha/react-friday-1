@@ -66,9 +66,9 @@ class App extends React.Component() {
   // }
 
   handleAddingNewQuest(newQuest){
-    var newMastQuestList = this.state.masterQuestList.slice();
-    newMastQuestList.push(newQuest);
-    this.setState({masterQuestList: newMastQuestList});
+    var newMasterQuestList = this.state.masterQuestList.slice();
+    newMasterQuestList.push(newQuest);
+    this.setState({masterQuestList: newMasterQuestList});
   }
 
   render(){
@@ -82,7 +82,7 @@ class App extends React.Component() {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/BulletinBoard' render={()=><QuestList questList={this.state.masterQuestList} />}/>
+          <Route path='/QuestList' render={()=><QuestList questList={this.state.masterQuestList} />}/>
           <Route path='/Hello' component={Hello} />
           <Route path='/NewQuest' render={()=><NewQuestControl onNewQuestCreation={this.handleAddingNewQuest} />} />
           <Route path='/EditQuest' component={EditQuest} />

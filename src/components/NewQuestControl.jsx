@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Confirmation from './Confirmation';
 import NewQuestForm from './NewQuestForm';
-import PropTypes from 'prop-types';
 
 class NewQuestControl extends React.Component {
 
