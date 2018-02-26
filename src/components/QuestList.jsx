@@ -1,5 +1,6 @@
 import React from 'react';
 import Quest from './Quest';
+import PropTypes from 'prop-types';
 
 // let masterQuestList = [
 //   {
@@ -40,10 +41,10 @@ import Quest from './Quest';
 //   }
 // ];
 
-function QuestList() {
+function QuestList(props) {
   return (
     <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', justifyContent:'center', maxWidth:'1800px', margin:'auto'}}>
-      {masterQuestList.map((quest, index) =>
+      {props.questList.map((quest, index) =>
         <Quest title={quest.title}
           giver={quest.giver}
           description={quest.description}
@@ -53,5 +54,9 @@ function QuestList() {
     </div>
   );
 }
+
+QuestList.propTypes = {
+  questList: PropTypes.array
+};
 
 export default QuestList;
